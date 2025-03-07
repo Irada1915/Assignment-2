@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  background-color: #c8a002;
+  height: 100vh;
+  
+}
+
+h1 {
+  font-size: 5rem;
+  color: #675201;
+  font-family: 'Franklin Gothic Bold';
+
+}
+p {
+  margin-bottom: 24px !important;
+  color: #675201 ;
+  font-family: 'Franklin Gothic Medium';
+}
+.piano-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.piano {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.key {
+  width: 60px;
+  height: 200px;
+  margin: 2px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.key.black {
+  width: 40px;
+  height: 120px;
+  background-color: black;
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+  z-index: 1;
+}
+/* Нормальное состояние клавиши */
+.key {
+  width: 60px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  display: inline-block;
+  transition: transform 0.1s ease-in-out; 
+}
+
+/* Состояние клавиши при клике */
+.key:active {
+  transform: translateY(4px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+#design-rationale {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+#design-rationale h2 {
+  text-align: center;
+  color: #333;
+}
+
+
+
+
+
